@@ -1,6 +1,6 @@
 package uce.ec.BDmq.services;
+
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uce.ec.BDmq.Interfaces.Serviceable;
 import uce.ec.BDmq.repository.ProductRepository;
@@ -42,10 +42,6 @@ public class ProductService implements Serviceable<Product> {
         return productRepository.save(product);
     }
 
-    @Transactional
-    public List<Product> findProductByCategory(String categoryName){
-        return productRepository.findByCategoryName(categoryName);
-    }
 
     @Override
     public void delete(int id) {

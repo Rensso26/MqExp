@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public interface ControlleableId<T> {
+public interface ControllableId<T> {
 
     @PostMapping
     ResponseEntity<T> save(@RequestBody T entity);

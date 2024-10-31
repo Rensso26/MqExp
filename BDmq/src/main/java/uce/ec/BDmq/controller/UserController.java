@@ -4,7 +4,7 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import uce.ec.BDmq.Interfaces.ControlleableName;
+import uce.ec.BDmq.Interfaces.ControllableName;
 import uce.ec.BDmq.services.UserService;
 import uce.ec.BDmq.state.User;
 
@@ -13,7 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
-public class UserController implements ControlleableName<User> {
+public class UserController implements ControllableName<User> {
 
     private final UserService userService;
 

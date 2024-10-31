@@ -3,14 +3,14 @@ package uce.ec.BDmq.controller;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import uce.ec.BDmq.Interfaces.ControlleableName;
+import uce.ec.BDmq.Interfaces.ControllableName;
 import uce.ec.BDmq.services.CategoryService;
 import uce.ec.BDmq.state.Category;
 import java.util.List;
 
 @RestController
 @RequestMapping("/category")
-public class CategoryController implements ControlleableName<Category> {
+public class CategoryController implements ControllableName<Category> {
     private final CategoryService categoryService;
 
     public CategoryController(CategoryService categoryService) {

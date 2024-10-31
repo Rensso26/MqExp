@@ -7,5 +7,4 @@ import uce.ec.BDmq.state.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     User findByuser(String user);
-    User findById(Long id);
 }
